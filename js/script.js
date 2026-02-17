@@ -18,3 +18,27 @@ btnAbrirMenuMobile.addEventListener('click', ()=> {
 menuMobile.addEventListener('click', ()=> {
     menuMobile.classList.remove('abrir-menu');
 })
+
+// ação do formulário
+
+document.getElementById("formContato").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+    let celular = document.getElementById("celular").value;
+    let mensagem = document.getElementById("mensagem").value;
+
+    let texto = `Olá, me chamo ${nome}.
+Email: ${email}
+Celular: ${celular}
+Mensagem: ${mensagem}`;
+
+    let numero = "5511973999086";
+
+    let url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+
+});
