@@ -193,7 +193,7 @@ section.hero{
 /* Estilo sobre mim */
 
 section.sobre-mim{
-    padding: 80px 0;
+    padding: 150px 0;
 }
 
 .icon-container {
@@ -280,7 +280,7 @@ section.sobre-mim{
 
 section.skills{
     background-color: var(--rosaclaro);
-    padding: 80px 0;
+    padding: 150px 0;
 } 
 
 section.formulario{
@@ -290,7 +290,7 @@ section.formulario{
 /* Estilo dos projetos */
 
 section.portfolio{
-    padding: 80px 0;
+    padding: 150px 0;
 }
 
 .interface{
@@ -374,7 +374,6 @@ section.portfolio{
 /* Estilo do forms */
 
 .formulario {
-    padding: 20px;
     text-align: center;
     background-color: var(--rosaclaro);
 }
