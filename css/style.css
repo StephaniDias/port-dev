@@ -1,0 +1,443 @@
+:root{
+  --rosa: #E53198;
+  --azul: #8FA3BF;
+  --lilas: #654BE3;
+  --preto: #000000;
+  --branco: #FFFFFF;
+  --rosaclaro: #F0ADCF;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--azul);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+.interface {
+    max-width: 1380px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--rosaclaro);
+    border-radius: 8px;
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--rosaclaro);
+}
+
+h1.titulo-section{
+    font-size: 4rem;
+    color: var(--branco);
+}
+
+h1.titulo-section span{
+    color: var(--rosa);
+}
+
+/* Estilo do cabeçalho */
+header{
+    background-color: transparent;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo{
+    color: var(--branco);
+    padding: 18px 0;
+}
+
+header nav.menu-desktop ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 56px;
+}
+
+header nav.menu-desktop a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+header nav.menu-desktop a:hover{
+        color: var(--preto);
+}
+
+header nav.menu-desktop button{
+    width: 144px;
+    height: 48px;
+}
+
+header.scrolled {
+    background-color: var(--rosa);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+/* Estilo do menu mobile */
+
+.btn-menu-mobile{
+    display: none;
+}
+.btn-menu-mobile i{
+    font-size: 2rem;
+    color: var(--branco);
+}
+
+.menu-mobile{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 110vh;
+    background-color: var(--rosaclaro);
+    text-align: right;
+    padding: 32px 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.menu-mobile ul{
+    list-style: none;
+    padding: 64px 0;
+}
+
+.menu-mobile ul li a{
+    color: var(--rosa);
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 24px;
+    display: block;
+    transition: .2s;
+}
+
+.menu-mobile ul li a:hover{
+    background-color: var(--rosa);
+    color: var(--rosaclaro);
+}
+.menu-mobile .fi-rr-cross{
+    font-size: 2rem;
+    color: var(--rosa);
+    padding: 24px;
+}
+
+.menu-mobile.abrir-menu{
+    left: 0;
+    pointer-events: initial;
+}
+/* Estilo da hero */
+
+section.hero{
+    background-image: linear-gradient(to left, var(--rosa) 60%, var(--rosaclaro)40%);
+    padding-top: 144px;
+}
+
+.hero > .interface{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.hero .img-hero{
+    line-height: 0;
+}
+
+.hero .txt-hero h1{
+    font-size: 3rem;
+    color: var(--branco);
+    font-weight: 300;
+}
+
+.hero .txt-hero h1 span{
+    color: var(--rosaclaro);
+    display: block;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.hero .txt-hero p {
+    color: var(--branco);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+
+.hero .txt-hero button{
+    width: 200px;
+    height: 48px;
+}
+
+/* Estilo sobre mim */
+
+section.sobre-mim{
+    padding: 80px 0;
+}
+
+.icon-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon i {
+    font-size: 32px;
+    color: var(--rosa); 
+    transition: 0.3s;
+}
+
+.icon:hover {
+    background-color: var(--branco);
+    color: var(--branco) ;
+    transform: translateY(-5px);
+}
+.icon-box {
+    display: flex;           
+    gap: 40px;               
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 35px;
+}
+
+.item {
+    display: flex;           
+    flex-direction: column;  /* nome em cima, ícone embaixo */
+    align-items: center;     /* centraliza tudo */
+}
+
+.item span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color:var(--rosa);
+}
+
+.item i {
+    font-size: 60px;
+    color: var(--rosa);       
+    background:var(--branco);       
+    padding: 20px;
+    border-radius: 50%; 
+}
+
+.sobre-mim > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+.sobre-mim .txt-sobre p{
+    color: var(--branco);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+    font-size: 1.2rem;
+}
+
+.sobre-mim .txt-sobre p span{
+    font-weight: bold;
+    color: var(--preto);
+}
+
+
+/* Estilo da seção minhas habilidades */
+
+section.skills{
+    background-color: var(--rosaclaro);
+    padding: 80px 0;
+} 
+
+section.formulario{
+    padding: 80px 0;
+}
+
+/* Estilo dos projetos */
+
+section.portfolio{
+    padding: 80px 0;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.portfolio .interface p{
+    color: var(--branco);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+    font-size: 1.2rem;
+}
+
+.portfolio .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.portfolio-container .portfolio-box{
+    min-width: 200px;
+    height: 400px;
+    border: 2px solid var(--rosa);
+    border-radius: 16px;
+
+    background-size: cover;
+    background-position-y: 0%;
+    transition: background-position-y 10s;
+
+    position: relative;
+}
+
+.portfolio-container .portfolio-box .infor-portfolio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d0;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 18px;
+
+    opacity: 0;
+}
+
+.portfolio-container .portfolio-box .infor-portfolio:hover{
+    opacity: 1;
+    transition: .2s;
+}
+
+.portfolio-container .portfolio-box:hover{
+    background-position-y: 100%;
+}
+
+.portfolio-container .projeto1{
+    background-image: url(../projects/calculadora\ IMC.png);
+}
+
+.portfolio-container .projeto2{
+    background-image: url(../projects/food\ \(2\).png);
+}
+
+.portfolio-container .projeto3{
+    background-image: url(../projects/tecnologia.png);
+}
+
+.portfolio-container .projeto4{
+    background-image: url(../projects/amigo\ secreto.png);
+}
+
+
+/* Estilo do forms */
+
+.formulario {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--rosaclaro);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px 0;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: var(--preto);
+    font-size: 18px;
+}
+
+form input::placeholder {
+    color: var(--rosa);
+}
+form textarea{
+    resize: none;
+}
+
+form textarea::placeholder{
+    color: var(--rosa)
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: var(--rosa);
+    color: var(--branco);
+    font-weight: 700px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px var(--rosa);
+    transform: scale(1.05);
+}
+
+/* Estilo do rodapé */
+
+footer{
+    padding:40px 0;
+    background-color: var(--azul);
+}
+
+footer > .interface{
+    display: flex;
+    justify-content: space-between;
+    color: var(--branco);
+    height: 15px;
+    align-items: center;
+    float: left;
+}
