@@ -369,7 +369,18 @@ section.portfolio{
 .portfolio-container .projeto4{
     background-image: url(../projects/amigo\ secreto.png);
 }
-
+.portfolio-container .projeto5{
+    background-image: url(../projects/lista.png);
+}
+.portfolio-container .projeto6{
+    background-image: url(../projects/breve.png);
+}
+.portfolio-container .projeto7{
+    background-image: url(../projects/breve.png);
+}
+.portfolio-container .projeto8{
+    background-image: url(../projects/breve.png);
+}
 
 /* Estilo do forms */
 
